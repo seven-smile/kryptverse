@@ -13,6 +13,9 @@ const Navbar = () => {
             <Typography.Title level={2} className="logo">
                 <Link to="/">Kryptoverse</Link>
             </Typography.Title>
+            {/* <Button className="menu-control-container">
+
+            </Button> */}
         </div>
     </div>
   )
