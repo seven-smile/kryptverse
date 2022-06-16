@@ -1,21 +1,21 @@
 import React from 'react';
-import { Switch , Route, Link } from 'react-router-dom';
+import { Switch, Route, Routes, Link } from 'react-router-dom';
 import {Layout, Typography, Space } from 'antd';
 
-import {Navbar} from './components';
+import { Navbar, Exchanges, Homepage, News, Cryptocurrencies, CryptoDetails} from './components';
 import './App.css'
+
 const App = () => {
   return (
     <div className='app'>
         <div className='navbar'>
             <Navbar />  
         </div>
-
         <div className='main'>
           <Layout>
             <div className='routes'>
-              <Switch>
-                <Route exact path='/'>
+              <Routes>
+                {/* <Route exact path='/'>
                   <Homepage />
                 </Route>
                 <Route exact path='/exchanges'>
@@ -28,9 +28,14 @@ const App = () => {
                   <CryptoDetails />
                 </Route>
                 <Route exact path='/news'>
-                  <News />
-                </Route>
-              </Switch>
+                  <News />  
+                </Route> */}
+                <Route path='/' element={<Homepage />} />
+                <Route path='/exchanges' element={<Exchanges />} />
+                <Route path='/cryptocurrencies' element={< Cryptocurrencies />} />
+                <Route path='/crypto/:coinId' element={<CryptoDetails />} />
+                <Route path='/news' element={<News />} />
+              </Routes>
             </div>
           </Layout>
         </div>
@@ -40,4 +45,4 @@ const App = () => {
   );
 }
 
-export default App;
+export default App
