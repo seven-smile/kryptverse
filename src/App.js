@@ -38,11 +38,17 @@ const App = () => {
               </Routes>
             </div>
           </Layout>
-        </div>
+       
         <div className='footer'>
           <Typography.Title level ={5} style={{ color: 'white', textAlign: "center" }}>
                 Copyright <small>&copy;</small> 2022 Kryptoverse . All Rights Reserve
           </Typography.Title>
+          <Space>
+            <Link to= "/">Home</Link>
+            <Link to= "/exchanges">Exchanges</Link>
+            <Link to= "/news">News</Link>
+          </Space>
+           </div>
         </div>
     </div>
   );
