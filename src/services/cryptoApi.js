@@ -24,6 +24,7 @@ export const {
     useGetCryptosQuery,
 } = cryptoApi; 
 // const axios = require("axios");
+//all this is bull
 
 // const options = {
 //   method: 'GET',
