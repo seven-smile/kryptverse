@@ -24,8 +24,6 @@ export const {
     useGetCryptosQuery,
 } = cryptoApi; 
 // const axios = require("axios");
-
-
 // const options = {
 //   method: 'GET',
 //   url: 'https://coinranking1.p.rapidapi.com/coins',
@@ -49,3 +47,7 @@ export const {
 // }).catch(function (error) {
 // 	console.error(error);
 // });
+
+
+
+
