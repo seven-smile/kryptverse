@@ -9,7 +9,7 @@ const { Title } = Typography;
 
 const Homepage = () => {
   const { data, isFetching } = useGetCryptosQuery();
-  const globalStats = data?.data?.stats; 
+  const globalStats = data?.data?.Stats; 
 
   if(isFetching) return 'Loading...';
 
@@ -23,7 +23,12 @@ const Homepage = () => {
         <Col span={12}><Statistic title  = "Total 24h Volume" value={millify(globalStats.total24hVolume)}  /></Col>
          <Col span={12}><Statistic title  = "Total Markets" value={millify(globalStats.totalMarkets)}  /></Col>
        </Row>
+       <div className='home-heading-constiner'>
+        <Title level={2} className="home-title">Top 10 Cryptocurrencies in the World</Title>
+        <Title level={3} className="show-mmore"><Link to="//cryptocurrencies><Link></Link></Title>
+     </div>
      </>
+     
   )
  }
 
